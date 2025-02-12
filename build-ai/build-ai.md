@@ -124,3 +124,10 @@ curl -X GET "http://localhost:8080/chat?question=Hello"
 ---
 
 ### Next Step → [Adding Retrieval-Augmented Generation (RAG)](05_adding_rag.md)
+
+
+## Acknowledgements
+
+* **Author** - Dmitry Kornilov
+* **Contributors** - Ankit Pandey, Sid Joshi
+* **Last Updated By/Date** - Ankit Pandey, February 2025

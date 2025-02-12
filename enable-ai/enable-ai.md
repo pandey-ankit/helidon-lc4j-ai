@@ -164,3 +164,10 @@ You should receive an AI-generated response.
 ---
 
 ### Next Step → [Building AI Service](04_building_ai_service.md)
+
+
+## Acknowledgements
+
+* **Author** - Dmitry Kornilov
+* **Contributors** - Ankit Pandey, Sid Joshi
+* **Last Updated By/Date** - Ankit Pandey, February 2025

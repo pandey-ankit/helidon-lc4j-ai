@@ -1,5 +1,5 @@
 {
-    "workshoptitle": "Coherence Demonstration Application",
+    "workshoptitle": "Build an AI-Powered Applications with Helidon and LangChain4J",
     "help": "livelabs-help-weblogic_us@oracle.com",
     "tutorials": [
         {
@@ -13,39 +13,44 @@
             "filename": "https://oracle-livelabs.github.io/common/labs/cloud-login/pre-register-free-tier-account.md"
         },
         {
-            "title": "Lab 1: Prepare Setup",
+            "title": "Lab 1: Setting Up the Environment",
             "type": "freetier",
-            "filename": "../../prepare-setup/prepare-setup.md"
+            "filename": "../../setup-environment/setup-environment.md"
         },
         {
-            "title": "Lab 2: Explore the Demonstration Application",
+            "title": "Lab 2: Setting Up the Project",
             "type": "freetier",
-            "filename": "../../explore/explore.md"
+            "filename": "../../setup-project/setup-project.md"
         },
         {
-            "title": "Lab 3: Federate Data Between Clusters",
+            "title": "Lab 3: Enabling AI Capabilities in the Project",
             "type": "freetier",
-            "filename": "../../federate/federate.md"
+            "filename": "../../enable-ai/enable-ai.md"
         },
         {
-            "title": "Lab 4: Explore Python, JavaScript and Go Clients",
+            "title": "Lab 4: Building AI Service",
             "type": "freetier",
-            "filename": "../../explore-clients/explore-clients.md"
+            "filename": "../../build-ai/build-ai.md"
         },
         {
-            "title": "Lab 5: Gain Insight through Open Tracing",
+            "title": "Lab 5: Add Retrieval-Augmented Generation (RAG)",
             "type": "freetier",
-            "filename": "../../open-tracing/open-tracing.md"
+            "filename": "../../add-rag/add-rag.md"
         },
 		{
-            "title": "Lab 6: Work with Persistence",
+            "title": "Lab 6: Preparing Application Data",
             "type": "freetier",
-            "filename": "../../persistence/persistence.md"
+            "filename": "../../prepare-data/prepare-data.md"
         },
 		{
-            "title": "Lab 7: Explore the Application Code",
+            "title": "Lab 7: Fill the Embedding Store",
             "type": "freetier",
-            "filename": "../../explore-code/explore-code.md"
+            "filename": "../../embedding-store/embedding-store.md"
+        },
+        {
+            "title": "Lab 8: Fine-Tune the Responses",
+            "type": "freetier",
+            "filename": "../../ai-response/ai-response.md"
         },
       {
         "title": "Need Help?",

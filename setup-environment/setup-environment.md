@@ -87,3 +87,9 @@ You can use any code editor of your choice. Recommended options:
 ---
 
 ### Next Step → [Setting Up the Project](02_setting_up_the_project.md)
+
+## Acknowledgements
+
+* **Author** - Dmitry Kornilov
+* **Contributors** - Ankit Pandey, Sid Joshi
+* **Last Updated By/Date** - Ankit Pandey, February 2025

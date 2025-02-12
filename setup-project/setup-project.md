@@ -70,3 +70,10 @@ curl -X GET http://localhost:8080/chat
 ---
 
 ### Next Step → [Enabling AI Capabilities in the Project](03_enabling_ai_capabilities_in_the_project.md)
+
+
+## Acknowledgements
+
+* **Author** - Dmitry Kornilov
+* **Contributors** - Ankit Pandey, Sid Joshi
+* **Last Updated By/Date** - Ankit Pandey, February 2025

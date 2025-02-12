@@ -210,3 +210,10 @@ Loaded menu item: Cappuccino
 ---
 
 ### **Next Step → [Filling the Embedding Store with Data](07_filling_embedding_store.md)**
+
+
+## Acknowledgements
+
+* **Author** - Dmitry Kornilov
+* **Contributors** - Ankit Pandey, Sid Joshi
+* **Last Updated By/Date** - Ankit Pandey, February 2025

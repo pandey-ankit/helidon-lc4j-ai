@@ -157,3 +157,9 @@ curl -X GET "http://localhost:8080/chat?question=What drinks do you have?"
 ---
 
 ### Next Step → [Preparing Application Data](06_preparing_application_data.md)
+
+## Acknowledgements
+
+* **Author** - Dmitry Kornilov
+* **Contributors** - Ankit Pandey, Sid Joshi
+* **Last Updated By/Date** - Ankit Pandey, February 2025

@@ -98,3 +98,10 @@ http://localhost:8080/chat?question="What coffee do you have?"
 ---
 
 ### Congratulations! You Have Completed the Hands-On Lab!  
+
+
+## Acknowledgements
+
+* **Author** - Dmitry Kornilov
+* **Contributors** - Ankit Pandey, Sid Joshi
+* **Last Updated By/Date** - Ankit Pandey, February 2025

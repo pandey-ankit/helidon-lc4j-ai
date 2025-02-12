@@ -199,3 +199,9 @@ Here are **five questions** to test whether the **assistant retrieves relevant m
 ---
 
 ### Next Step → [Fine-Tuning AI Responses](08_fine_tuning.md)
+
+## Acknowledgements
+
+* **Author** - Dmitry Kornilov
+* **Contributors** - Ankit Pandey, Sid Joshi
+* **Last Updated By/Date** - Ankit Pandey, February 2025
