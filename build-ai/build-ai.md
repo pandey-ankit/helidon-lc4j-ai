@@ -1,15 +1,8 @@
-# 4. Building AI Service
+# Building AI Service
 
-## In This Section, We Will:
+## Introduction
 
-- Understand the need for an **AI Service** in LLM-powered applications.
-- Learn how **LangChain4J AI Services** help combine multiple AI components.
-- Implement an **AI Service**.
-- Modify our **RESTful service** to use the AI Service instead of calling the chat model directly.
-
----
-
-## 1. Why Do We Need an AI Service?
+### Why Do We Need an AI Service?
 
 LLM-powered applications typically require more than just a **chat model**. To provide **advanced AI functionality**, we also need:
 
@@ -22,31 +15,44 @@ Instead of managing these separately, we can use **LangChain4J AI Services**, wh
 
 Helidon’s **LangChain4J integration** makes it easy to create AI Services using **Helidon Inject**.
 
-## 2. Creating the AI Service
+
+### Objectives
+
+In This Section, We Will:
+
+* Implement an **AI Service**.
+* Modify our **RESTful service** to use the AI Service instead of calling the chat model directly.
+* Testing the AI Service.
+
+
+## Task 1: Creating the AI Service
 
 An **AI Service** is a user-defined interface annotated with `@Ai.Service`. By default, it **automatically integrates all LangChain4J (LC4J) components** registered in Helidon's service registry. This means that if no specific configuration is provided, the service will use all available AI components.
 
 At this stage, only the **`ChatLanguageModel`** has been configured, so it will be **automatically injected** into the service. Later, we will extend the AI Service by adding **embedding storage, chat memory**, and other components to enhance its capabilities.
 
-📌 We will keep all AI-related classes in `io.helidon.hol.lc4j.ai` package. Create this package first if it doesn't exist.
+1. We will keep all AI-related classes in `io.helidon.hol.lc4j.ai` package. Right click on `io.helidon.hol.lc4j` and select **New Folder** and Enter name **ai**.
 
-**Create a new file `MenuItem.java` in `io.helidon.hol.lc4j.ai` package:**
+2. Right click on `io.helidon.hol.lc4j.ai`, and select **New File** and Enter **`MenuItem.java` as name.
+    ```bash
+    <copy>MenuItem.java</copy>
+    ```
+3. Copy and paste the following content in `MenuItem.java`
+    ```bash
+    <copy>package io.helidon.hol.lc4j.ai;
 
-```java
-package io.helidon.hol.lc4j.ai;
+    import io.helidon.integrations.langchain4j.Ai;
 
-import io.helidon.integrations.langchain4j.Ai;
+    import dev.langchain4j.service.SystemMessage;
 
-import dev.langchain4j.service.SystemMessage;
+    @Ai.Service
+    public interface ChatAiService {
 
-@Ai.Service
-interface ChatAiService {
+        String chat(String question);
+    }</copy>
+    ```
 
-    String chat(String question);
-}
-```
-
-## 3. Updating the RESTful Service
+## Task 2:  Updating the RESTful Service
 
 Now, let's modify our existing `ChatBotService.java` to use the **AI Service** instead of interacting with the chat model directly.
 
@@ -66,65 +72,52 @@ Now, we will inject and use `ChatAiService` instead:
 var answer = chatAiService.chat(question);
 ```
 
-Here is the updated version of `ChatBotService`:
+1. Replace the existing content of `ChatBotService.java` with the below one:
+    ```bash
+    <copy>
+    @Service.Singleton
+    public class ChatBotService implements HttpService {
 
-```java
-@Service.Singleton
-class ChatBotService implements HttpService {
+        private final ChatAiService chatAiService;
 
-    private final ChatAiService chatAiService;
+        @Service.Inject
+        public ChatBotService(ChatAiService chatAiService) {
+            // Injecting ChatAiService using constructor injection
+            this.chatAiService = chatAiService;
+        }
 
-    @Service.Inject
-    public ChatBotService(ChatAiService chatAiService) {
-        // Injecting ChatAiService using constructor injection
-        this.chatAiService = chatAiService;
-    }
+        @Override
+        public void routing(HttpRules httpRules) {
+            httpRules.get("/chat", this::chatWithAssistant);
+        }
 
-    @Override
-    public void routing(HttpRules httpRules) {
-        httpRules.get("/chat", this::chatWithAssistant);
-    }
+        private void chatWithAssistant(ServerRequest req, ServerResponse res) {
+            // Reading the `question` query parameter from the request. 
+            var question = req.query().get("question");
 
-    private void chatWithAssistant(ServerRequest req, ServerResponse res) {
-        // Reading the `question` query parameter from the request. 
-        var question = req.query().get("question").orElse("Hello");
+            // Calling the AI service to get the answer
+            var answer = chatAiService.chat(question);
 
-        // Calling the AI service to get the answer
-        var answer = chatAiService.chat(question);
+            // Return the answer
+            res.send(answer);
+        }
+    }</copy>
+    ```
 
-        // Return the answer
-        res.send(answer);
-    }
-}
-```
+## Task 3: Testing the AI Service**
 
-## **5. Testing the AI Service**
+1. Recompile and run the application:
+    ```bash
+    <copy>mvn clean package
+    java -jar target/helidon-ai-hol.jar</copy>
+    ```
 
-Recompile and run the application:
+2. Copy and paste the following command in the other terminal to test the application.
+    ```bash
+    <copy>curl -X GET "http://localhost:8080/chat?question=Hello"</copy>
+    ```
 
-```sh
-mvn clean package
-java -jar target/helidon-ai-hol.jar
-```
-
-Now, test it in a browser:
-
-```
-http://localhost:8080/chat?question=Hello
-```
-
-Or, use `curl`:
-
-```sh
-curl -X GET "http://localhost:8080/chat?question=Hello"
-```
-
-**Expected Result:** The response should still be an AI-generated answer, just like before.
-
----
-
-### Next Step → [Adding Retrieval-Augmented Generation (RAG)](05_adding_rag.md)
-
+    **Expected Result:** The response should still be an AI-generated answer, just like before.
 
 ## Acknowledgements
 

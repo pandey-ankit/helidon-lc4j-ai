@@ -34,12 +34,15 @@ The bootstrap project contains the following key files:
 
 ## Task 3: Build and Run the Project
 
-1. Run the following command to **clean** and **build** the project:
+1. Open a new terminal, Click **Terminal** -> **New Terminal**.
+
+
+2. Run the following command to **clean** and **build** the project:
       ```bash
       <copy>mvn clean package</copy>
       ```
 
-2. Start the application using:
+3. Start the application using:
       ```bash
       <copy>java -jar target/helidon-ai-hol.jar</copy>
       ```
