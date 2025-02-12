@@ -1,4 +1,4 @@
-# Setting Up the Environment
+# Setup the Environment
 
 ## Introduction
 

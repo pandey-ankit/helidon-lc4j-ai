@@ -13,22 +13,22 @@
             "filename": "https://oracle-livelabs.github.io/common/labs/cloud-login/pre-register-free-tier-account.md"
         },
         {
-            "title": "Lab 1: Setting Up the Environment",
+            "title": "Lab 1: Setup the Environment",
             "type": "freetier",
             "filename": "../../setup-environment/setup-environment.md"
         },
         {
-            "title": "Lab 2: Setting Up the Project",
+            "title": "Lab 2: Setup the Project",
             "type": "freetier",
             "filename": "../../setup-project/setup-project.md"
         },
         {
-            "title": "Lab 3: Enabling AI Capabilities in the Project",
+            "title": "Lab 3: Enable AI Capabilities in the Project",
             "type": "freetier",
             "filename": "../../enable-ai/enable-ai.md"
         },
         {
-            "title": "Lab 4: Building AI Service",
+            "title": "Lab 4: Build an AI Service",
             "type": "freetier",
             "filename": "../../build-ai/build-ai.md"
         },
@@ -38,12 +38,12 @@
             "filename": "../../add-rag/add-rag.md"
         },
 		{
-            "title": "Lab 6: Preparing Application Data",
+            "title": "Lab 6: Prepare Application Data",
             "type": "freetier",
             "filename": "../../prepare-data/prepare-data.md"
         },
 		{
-            "title": "Lab 7: Fill the Embedding Store",
+            "title": "Lab 7: Fill the EmbeddingStore",
             "type": "freetier",
             "filename": "../../embedding-store/embedding-store.md"
         },

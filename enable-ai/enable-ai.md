@@ -1,4 +1,4 @@
-# Enabling AI Capabilities in the Project
+# Enable AI Capabilities in the Project
 
 ## Introduction
 

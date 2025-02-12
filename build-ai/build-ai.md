@@ -1,4 +1,4 @@
-# Building AI Service
+# Build an AI Service
 
 ## Introduction
 

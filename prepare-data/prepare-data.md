@@ -1,4 +1,4 @@
-# Preparing Application Data
+# Prepare Application Data
 
 ## Introduction
 

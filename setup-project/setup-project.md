@@ -1,4 +1,4 @@
-# Setting Up the Project
+# Setup the Project
 
 ## Introduction
 

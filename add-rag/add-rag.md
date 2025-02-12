@@ -1,4 +1,4 @@
-#  Adding Retrieval-Augmented Generation (RAG)
+#  Add Retrieval-Augmented Generation (RAG)
 
 ## Introduction
 
