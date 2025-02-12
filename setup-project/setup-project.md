@@ -1,76 +1,61 @@
-# 2. Setting Up the Project
+# Setting Up the Project
 
-In This Section, We Will:
+## Introduction
 
-- Explore the **bootstrap project** that includes a minimal **Helidon SE** application.
-- Understand the project structure and its key components.
-- Build and run the project to ensure the setup is correct.
-- Verify that the provided **REST service** is working.
+In this lab, you will explore the **bootstrap** project that include a minimal **Helidon SE** application. You will understand the project structure and its key component. Then, you will build and run the application, to verify **Rest service** is working.
 
----
+Estimated time: 10 minutes
 
-## Bootstrap the Project
+### Objectives
 
-This repository includes a **bootstrap project**, which provides a **Helidon SE** application with a basic REST service. The project is located in the `code/bootstrap` directory.
+* Explore the **bootstrap project** a **Helidon SE** application
+* Understand the project structure
+* Build and run the project
+* Verify **REST service** is working
 
-### Project Structure
+### Prerequisites
+
+* You must have completed all previous labs.
+
+## Task 1: Bootstrap the Project
+
+1. This repository includes a **bootstrap project**, which provides a **Helidon SE** application with a basic REST service. The project is located in the `code/bootstrap` directory.
+
+## Task 2: Understand the project structure
 The bootstrap project contains the following key files:
 
-- **`pom.xml`**
-   - Maven build script with a minimal set of dependencies required to build and run the application.
+1. **`pom.xml`** - Maven build script with a minimal set of dependencies required to build and run the application.
 
-- **`ApplicationMain.java`**
-   - Contains the `main` method and initializes the application.
+2. **`ApplicationMain.java`** - Contains the `main` method and initializes the application.
 
-- **`ChatBotService.java`**
-   - A simple **RESTful service** that listens on the `/chat` endpoint.
-   - Currently, it responds with `"Hello"` to every request.
-   - _We will modify this service to implement our chatbot functionality._
+3. **`ChatBotService.java`** - A simple **RESTful service** that listens on the **`/chat`** endpoint. Currently, it responds with `"Hello"` to every request. We will modify this service to implement our chatbot functionality.
 
-- **`application.yaml`**
-   - Contains application configuration settings.
-   - _We will extend this file as we enhance the application._
+4. **`application.yaml`** - Contains application configuration settings. We will extend this file as we enhance the application.
 
-## Build and Run the Project
+## Task 3: Build and Run the Project
 
-### 1. Build the Project
-Run the following command to **clean** and **build** the project:
+1. Run the following command to **clean** and **build** the project:
+      ```bash
+      <copy>mvn clean package</copy>
+      ```
 
-```sh
-mvn clean package
-```
+2. Start the application using:
+      ```bash
+      <copy>java -jar target/helidon-ai-hol.jar</copy>
+      ```
 
-### 2. Run the Application
-Start the application using:
+## Task 4: Verify the Application is Running
 
-```sh
-java -jar target/helidon-ai-hol.jar
-```
+1. Run the following command to test the application.
+      ```bash
+      <copy>curl -X GET http://localhost:8080/chat</copy>
+      ```
 
-### 3. Verify the Application is Running
+      You should receive the following response:
 
-Open your browser and navigate to:
-
-```
-http://localhost:8080/chat
-```
-
-You should receive the following response:
-
-```
-Hello
-```
-
-Alternatively, you can test it using `curl`:
-
-```sh
-curl -X GET http://localhost:8080/chat
-```
-
----
-
-### Next Step → [Enabling AI Capabilities in the Project](03_enabling_ai_capabilities_in_the_project.md)
-
+      ```bash
+      Hello
+      ```
 
 ## Acknowledgements
 
