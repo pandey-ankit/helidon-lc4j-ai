@@ -33,9 +33,9 @@ At this stage, only the **`ChatLanguageModel`** has been configured, so it will 
 
 1. We will keep all AI-related classes in `io.helidon.hol.lc4j.ai` package. Right click on `io.helidon.hol.lc4j` and select **New Folder** and Enter name **ai**.
 
-2. Right click on `io.helidon.hol.lc4j.ai`, and select **New File** and Enter **`MenuItem.java` as name.
+2. Right click on `io.helidon.hol.lc4j.ai`, and select **New File** and Enter **`ChatAiService.java` as name.
     ```bash
-    <copy>MenuItem.java</copy>
+    <copy>ChatAiService.java</copy>
     ```
 3. Copy and paste the following content in `MenuItem.java`
     ```bash
@@ -104,7 +104,7 @@ var answer = chatAiService.chat(question);
     }</copy>
     ```
 
-## Task 3: Testing the AI Service**
+## Task 3: Testing the AI Service
 
 1. Recompile and run the application:
     ```bash
