@@ -29,7 +29,10 @@ To summarize the prerequisites, you need:
 * JDK 21+ (newer versions are encouraged!)
 * Maven 3.8+
 * For Linux: glibc 2.27+ (e.g., OL8+, Ubuntu 18+)
+* curl
 * A Java IDE of your choice
+
+> If you are Windows user using PowerShell please be aware of the [curl alias issue](https://curl.se/windows/microsoft.html).
 
 ## About Helidon 
 

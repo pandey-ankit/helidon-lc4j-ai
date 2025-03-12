@@ -137,12 +137,12 @@ Now, let’s add a **chat model** to our project. We will use OpenAI’s **gpt-4
 
 2. To test the assistant, run the following command in the terminal:
     ```bash
-    <copy>curl -X GET "http://localhost:8080/chat?question=Hello"</copy>
+    <copy>curl "http://localhost:8080/chat?question=Hello"</copy>
     ```
 
     You should receive an AI-generated response.
     ```bash
-    $ curl -X GET "http://localhost:8080/chat?question=Hello"
+    $ curl "http://localhost:8080/chat?question=Hello"
     Hello! How can I assist you today?
     $
     ```
