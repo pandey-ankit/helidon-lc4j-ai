@@ -32,7 +32,7 @@ Estimated Time: 10 minutes
 
 3. Copy and paste the following URL in browser and download the **correct JDK 24** for your **Operating system** in your home directory.
     ```bash
-    <copy>https://www.oracle.com/in/java/technologies/downloads/</copy>
+    <copy>https://www.oracle.com/java/technologies/downloads/</copy>
     ```
 
 4. Extract the JDK 24 in your home folder.
@@ -46,17 +46,22 @@ Estimated Time: 10 minutes
 
 ## Task 2: Download the Helidon source code
 
-1.  Copy the following commands and paste in the terminal to download the source code of helidon application.
+There are 2 options available to access the HOL project.
+If you have git available you can clone whole [Helidon Labs](https://github.com/helidon-io/helidon-labs/tree/main/hols/langchain4j) repository:
 
-    ```bash
-    <copy>curl -O https://objectstorage.uk-london-1.oraclecloud.com/p/eVD6cUQpRms3iic_ZM4_si54wtIsFTNQUns-_U_HR7ofwQRj4m7qR76IMXDEEFqt/n/lrv4zdykjqrj/b/ankit-bucket/o/helidon-ai-hol.zip</copy>
-    ```
-    
+Git option:
 
-2. Copy and paste the following command to unzip the *helidon-ai-hol.zip*.
-    ```bash
-    <copy>unzip ~/helidon-ai-hol.zip</copy>
-    ```
+```bash
+git clone https://github.com/helidon-io/helidon-labs.git
+cd helidon-labs/hols/langchain4j
+```
+
+Alternative sourcecode download:
+
+```bash
+curl -O https://objectstorage.uk-london-1.oraclecloud.com/p/eVD6cUQpRms3iic_ZM4_si54wtIsFTNQUns-_U_HR7ofwQRj4m7qR76IMXDEEFqt/n/lrv4zdykjqrj/b/ankit-bucket/o/helidon-ai-hol.zip
+unzip ~/helidon-ai-hol.zip
+```
 
 You may now *proceed to the next lab*.
 

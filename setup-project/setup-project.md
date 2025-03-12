@@ -63,6 +63,8 @@ The bootstrap project contains the following key files:
     ```
 
     > *You will use only this terminal for building and running the application as it has the required JDK and Maven version.* You can use any terminal for testing the helidon application.
+    
+    > Do not get alarmed if you encounter `WARNING: java.lang.System::load`, it's a harmless warning caused by Maven compatibility issue [MNG-8248](https://issues.apache.org/jira/browse/MNG-8248)  
 
 4. In the terminal, where you have set the JDK and Maven, run the following command to **clean** and **build** the project:
       ```bash
