@@ -56,15 +56,15 @@ cd helidon-labs/hols/langchain4j
 Alternative sourcecode download:
 
 ```bash
-curl -O https://objectstorage.uk-london-1.oraclecloud.com/p/eVD6cUQpRms3iic_ZM4_si54wtIsFTNQUns-_U_HR7ofwQRj4m7qR76IMXDEEFqt/n/lrv4zdykjqrj/b/ankit-bucket/o/helidon-ai-hol.zip
+curl -O https://objectstorage.uk-london-1.oraclecloud.com/p/Z7KkflaFYAGMVpWL5n0nGBMF58iAp5_suMxnCymjgNizS0r72GkDOqSctkPAQjsM/n/lrv4zdykjqrj/b/ankit-bucket/o/helidon-ai-hol.zip
 unzip helidon-ai-hol.zip
 cd helidon-ai-hol
 ```
 
-You may now *proceed to the next lab*.
+You may now *proceed to the lab 2*.
 
 ## Acknowledgements
 
 * **Author** -  Dmitry Kornilov
-* **Contributors** - Sid Joshi, Maciej Gruszka, Daniel Kec
+* **Contributors** - Ankit Pandey, Sid Joshi, Daniel Kec
 * **Last Updated By/Date** - Daniel Kec, March 2025
